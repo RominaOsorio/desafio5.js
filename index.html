@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TodoList</title>
+    <link rel="stylesheet" href="./assets/css/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row1">
+        <h1>Todo List</h1>
+        <h2>Mis tareas</h2>
+        <div class="row">
+          <input class="input" id="input" type="text" />
+          <button class="btn" id="addTask">Agregar</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column1">
+          <p>Total: <span id="total">0</span></p>
+          <p>Realizadas: <span id="realizadas">0</span></p>
+        </div>
+        <div class="column2">
+          <table class="tabla">
+            <thead>
+              <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Tarea</th>
+                <th scope="col">Estado</th>
+                <th scope="col">Eliminar</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!--Aca se va a insertar el template-->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>
